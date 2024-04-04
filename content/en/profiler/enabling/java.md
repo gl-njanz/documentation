@@ -142,6 +142,10 @@ java \
 
 4. After a minute or two, you can visualize your profiles on the [Datadog APM > Profiling page][7].
 
+#### (Optional) Setup profiler for GraalVM Native Image
+
+Follow the [Tracer Setup Instructions][13] to build your native image with the Datadog Java Profiler.
+
 ### Enabling CPU profiler engine options
 
 Since dd-trace-java version 1.5.0, you have two options for the CPU profiler used, Datadog or Java Flight Recorder (JFR). Since version 1.7.0, Datadog is the default, but you can also optionally enable JFR for CPU profiling. You can enable either one or both engines. Enabling both captures both profile types at the same time.
@@ -344,3 +348,4 @@ The [Getting Started with Profiler][10] guide takes a sample service with a perf
 [10]: /getting_started/profiler/
 [11]: /profiler/connect_traces_and_profiles/#identify-code-hotspots-in-slow-traces
 [12]: /profiler/enabling/supported_versions/
+[13]: /tracing/trace_collection/compatibility/java/?tab=graalvm#setup
